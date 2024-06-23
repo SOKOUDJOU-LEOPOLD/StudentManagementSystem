@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="545.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sms.controller.StudentPageController">
+   <children>
+      <TableView fx:id="studentTableView" layoutX="72.0" layoutY="208.0" prefHeight="278.0" prefWidth="733.0">
+        <columns>
+          <TableColumn fx:id="reg_no_id" prefWidth="138.39999389648438" text="Registration Number" />
+          <TableColumn fx:id="name_id" minWidth="1.60003662109375" prefWidth="274.3999786376953" text="Name" />
+            <TableColumn fx:id="birthday_id" prefWidth="93.60003662109375" text="Birthday" />
+            <TableColumn fx:id="phone_id" prefWidth="90.39996337890625" text="Phone" />
+            <TableColumn fx:id="address_id" prefWidth="143.19989013671875" text="Address" />
+        </columns>
+      </TableView>
+      <Button fx:id="edit_id" layoutX="585.0" layoutY="170.0" mnemonicParsing="false" onAction="#editStudent" style="-fx-background-color: ffd6ff;" text="Edit" />
+      <Button fx:id="add_id" layoutX="651.0" layoutY="170.0" mnemonicParsing="false" onAction="#addStudent" style="-fx-background-color: a2d2ff;" text="Add" />
+      <Button fx:id="delete_id" layoutX="721.0" layoutY="170.0" mnemonicParsing="false" onAction="#deleteStudent" style="-fx-background-color: ef233c;" text="Delete" />
+      <Text layoutX="72.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students" wrappingWidth="76.12344360351562">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
